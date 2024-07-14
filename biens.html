@@ -1,14 +1,35 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="fr-FR" class="no-js">
   <head>
 
-    <!-- Title -->
-    <title>Nos Biens | BeMyGuest</title>
-
-    <!-- Required Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bootstrap HTML template and UI kit by Erilisdesign">
+ <!-- Other head elements (title, meta charset, etc.) go here -->
+    
+    <!-- SEO Meta Tags for Properties Page -->
+    <meta name="description" content="Découvrez les biens en gestion locative à Nice offerts par BeMyGuest. Parcourez une sélection de biens immobiliers gérés professionnellement pour votre investissement à Nice.">
+    <meta name="keywords" content="BeMyGuest, biens en gestion locative, propriétés, Nice, investissement immobilier, gestion immobilière">
+    <meta name="author" content="BeMyGuest">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Biens en Gestion Locative à Nice - BeMyGuest">
+    <meta property="og:description" content="Découvrez les biens en gestion locative à Nice offerts par BeMyGuest. Parcourez une sélection de biens immobiliers gérés professionnellement pour votre investissement à Nice.">
+    <meta property="og:image" content="https://properties-image.jpg"> <!-- Replace with an appropriate image URL -->
+    <meta property="og:url" content="https://bmg-nice-conciergerie.fr/biens.html"> <!-- Replace with your properties page's URL -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    
+    <!-- Canonical URL (if applicable) -->
+    <link rel="canonical" href="https://bmg-nice-conciergerie.fr/biens.html"> <!-- Replace with your properties page's URL -->
+    
+    <!-- Robots Meta Tags (optional) -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Viewport Meta Tag (for responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Language Meta Tag (if applicable) -->
+    <meta name="language" content="French">
+    
+    <!-- Title for Properties Page -->
+    <title>Biens en Gestion Locative à Nice - BeMyGuest</title>
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="assets/vendor/fullPage.js/dist/jquery.fullpage.min.css" type="text/css">
@@ -20,6 +41,8 @@
     <link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+
 
 
     <!-- Fonts -->
@@ -30,6 +53,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   </head>
   <body class="layout-wide">
@@ -47,7 +72,7 @@
     <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white shadow-light p-lg-4" data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img src="assets/images/Logo + texte_modified_white.png" class="navbar-brand-img" alt="">      </a>
 
       <!-- Toggler -->
@@ -60,23 +85,23 @@
 
         <!-- Navigation -->
         <ul class="navbar-nav ml-auto" id="navigation">
-          <li class="nav-item active" data-menuanchor="home">
+          <li class="nav-item active">
             <a class="nav-link" href="./index.html">Home</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-mission">
-            <a class="nav-link" href="./solutions.html">Nos solutions</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./solutions-2.html">Nos solutions</a>
           </li>
-          <li class="nav-item" data-menuanchor="what-we-do">
-            <a class="nav-link" href="#what-we-do">A propos</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./about.html">A propos</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-solutions">
+          <li class="nav-item" >
             <a class="nav-link" href="./service.html">Blog</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-work">
-            <a class="nav-link" href="./biens.html">Nos biens</a>
+          <li class="nav-item" >
+            <a class="nav-link navbar-nav-active" href="./biens.html">Nos biens</a>
           </li>
-          <li class="nav-item" data-menuanchor="contact">
-            <a class="nav-link" href="#contact">Contactez-nous</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#contact">Contactez-nous</a>
           </li>
         </ul>
 
@@ -266,8 +291,9 @@
 
     </div>
 
+
     <!-- Footer -->
-    <footer class="position-relative py-10 py-lg-12 bg-dark text-gray-500">
+    <!-- <footer class="position-relative py-10 py-lg-12 bg-dark text-gray-500">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 col-xl-12 col-xxl-10 mx-auto text-center">
@@ -297,15 +323,16 @@
           </div>
         </div>
       </div>
-    </footer><!-- footer end -->
+    </footer>footer end -->
 
     <!-- Fullpage - Social icons -->
     <nav class="ln-social-icons">
       <ul class="mx-auto">
         <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#!"><i class="fab ti-mobile "></i></a></li>
-      </ul>
+        <li><a href="#!"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
+        <li><a href="#!" data-toggle="modal" data-target="#subscribeModal"><i class="fas fa-phone"></i>
+        </ul>
     </nav>
 
     <!-- Fullpage - Copyright -->
@@ -323,19 +350,7 @@
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
-          <!-- Modal Body -->
-          <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
 
-            <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-8">
-              <i class="ti-book"></i>
-            </div>
-            <h2 id="documentation" class="mb-3">Documentation</h2>
-            <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which will assist you in the configuration of your new website in few minutes.</p>
-
-            <!-- Button -->
-            <a class="btn btn-primary d-block d-lg-inline-block" href="!#">Buy theme</a>
-
-          </div>
 
         </div>
       </div>
@@ -347,12 +362,12 @@
         <div class="modal-content hover-parent">
 
           <!-- Button Close -->
-          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-1">
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
           <!-- Overlay -->
-          <div class="overlay overlay-advanced">
+          <div class="overlay overlay-advanced" id="overlay-1">
             <div class="overlay-inner bg-cover" style="background-color:white"></div>
             <div class="overlay-inner opacity-70 hover-opacity-80"></div>
             <div class="overlay-inner bg-gradient-v-transparent-dark opacity-90 hover-opacity-80"></div>
@@ -433,7 +448,7 @@
           <div class="modal-content hover-parent">
   
             <!-- Button Close -->
-            <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+            <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-2">
               <i class="fas fa-times btn-icon-inner"></i>
             </button>
   
@@ -445,7 +460,7 @@
             </div>
   
             <!-- Modal Body -->
-            <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-white text-center">
+            <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-white text-center" id="subscribeModal1">
               <div class="carousel">
                 <div class="carousel-images">
                     <img class="active" src="./assets/images/flat-img/flat-2/flat-1.webp" alt="Appartement 1">
@@ -518,7 +533,7 @@
             <div class="modal-content hover-parent">
     
               <!-- Button Close -->
-              <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+              <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-3">
                 <i class="fas fa-times btn-icon-inner"></i>
               </button>
     
@@ -604,7 +619,7 @@
                     <div class="modal-content hover-parent">
             
                       <!-- Button Close -->
-                      <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                      <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-3">
                         <i class="fas fa-times btn-icon-inner"></i>
                       </button>
             
@@ -684,7 +699,7 @@
                         <div class="modal-content hover-parent">
                 
                           <!-- Button Close -->
-                          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-4">
                             <i class="fas fa-times btn-icon-inner"></i>
                           </button>
                 
@@ -764,7 +779,7 @@
         <div class="modal-content hover-parent">
 
           <!-- Button Close -->
-          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-5">
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
@@ -849,7 +864,7 @@
                 <div class="modal-content hover-parent">
         
                   <!-- Button Close -->
-                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-6">
                     <i class="fas fa-times btn-icon-inner"></i>
                   </button>
         
@@ -928,7 +943,7 @@
                         <div class="modal-content hover-parent">
                 
                           <!-- Button Close -->
-                          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-7">
                             <i class="fas fa-times btn-icon-inner"></i>
                           </button>
                 
@@ -1007,7 +1022,7 @@
                 <div class="modal-content hover-parent">
         
                   <!-- Button Close -->
-                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-8">
                     <i class="fas fa-times btn-icon-inner"></i>
                   </button>
         
@@ -1088,7 +1103,7 @@
         <div class="modal-content hover-parent">
 
           <!-- Button Close -->
-          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-9">
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
@@ -1168,7 +1183,7 @@
                 <div class="modal-content hover-parent">
         
                   <!-- Button Close -->
-                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-10">
                     <i class="fas fa-times btn-icon-inner"></i>
                   </button>
         
@@ -1247,7 +1262,7 @@
         <div class="modal-content hover-parent">
 
           <!-- Button Close -->
-          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-11">
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
@@ -1326,7 +1341,7 @@
                 <div class="modal-content hover-parent">
         
                   <!-- Button Close -->
-                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-12">
                     <i class="fas fa-times btn-icon-inner"></i>
                   </button>
         
@@ -1412,7 +1427,7 @@
         <div class="modal-content hover-parent">
 
           <!-- Button Close -->
-          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-13">
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
@@ -1492,7 +1507,7 @@
                 <div class="modal-content hover-parent">
         
                   <!-- Button Close -->
-                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+                  <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-14">
                     <i class="fas fa-times btn-icon-inner"></i>
                   </button>
         
@@ -1572,7 +1587,7 @@
         <div class="modal-content hover-parent">
 
           <!-- Button Close -->
-          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true">
+          <button type="button" class="btn btn-sm btn-icon btn-white position-absolute top-0 right-0 mt-n3 mr-n3 zindex-1" data-dismiss="modal" aria-hidden="true" id="button-modal-15">
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
@@ -1697,6 +1712,166 @@
     });
     </script>
 
+    <script>
+      const closeModalTrigger1 = document.querySelector('#button-modal-1');
+      const modal1 = document.querySelector('#subscribeModal');
+      closeModalTrigger1.addEventListener('click',()=>{
+        modal1.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger2 = document.querySelector('#button-modal-2');
+      const modal2 = document.querySelector('#subscribeModal2');
+      closeModalTrigger2.addEventListener('click',()=>{
+        modal2.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger3 = document.querySelector('#button-modal-3');
+      const modal3 = document.querySelector('#subscribeModal3');
+      closeModalTrigger3.addEventListener('click',()=>{
+        modal3.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger4 = document.querySelector('#button-modal-4');
+      const modal4 = document.querySelector('#subscribeModal4');
+      closeModalTrigger4.addEventListener('click',()=>{
+        modal4.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger5 = document.querySelector('#button-modal-5');
+      const modal5 = document.querySelector('#subscribeModal5');
+      closeModalTrigger5.addEventListener('click',()=>{
+        modal5.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger6 = document.querySelector('#button-modal-6');
+      const modal6 = document.querySelector('#subscribeModal6');
+      closeModalTrigger6.addEventListener('click',()=>{
+        modal6.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger7 = document.querySelector('#button-modal-7');
+      const modal7 = document.querySelector('#subscribeModal7');
+      closeModalTrigger7.addEventListener('click',()=>{
+        modal7.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger8 = document.querySelector('#button-modal-8');
+      const modal8 = document.querySelector('#subscribeModal8');
+      closeModalTrigger8.addEventListener('click',()=>{
+        modal8.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger9 = document.querySelector('#button-modal-9');
+      const modal9 = document.querySelector('#subscribeModal9');
+      closeModalTrigger9.addEventListener('click',()=>{
+        modal9.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger10 = document.querySelector('#button-modal-10');
+      const modal10 = document.querySelector('#subscribeModal10');
+      closeModalTrigger10.addEventListener('click',()=>{
+        modal10.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger11 = document.querySelector('#button-modal-11');
+      const modal11 = document.querySelector('#subscribeModal7');
+      closeModalTrigger11.addEventListener('click',()=>{
+        modal11.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger12 = document.querySelector('#button-modal-12');
+      const modal12 = document.querySelector('#subscribeModal12');
+      closeModalTrigger12.addEventListener('click',()=>{
+        modal12.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger13 = document.querySelector('#button-modal-13');
+      const modal13 = document.querySelector('#subscribeModal13');
+      closeModalTrigger13.addEventListener('click',()=>{
+        modal13.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger14 = document.querySelector('#button-modal-14');
+      const modal14 = document.querySelector('#subscribeModal14');
+      closeModalTrigger14.addEventListener('click',()=>{
+        modal14.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+      const closeModalTrigger15 = document.querySelector('#button-modal-15');
+      const modal15 = document.querySelector('#subscribeModal14');
+      closeModalTrigger15.addEventListener('click',()=>{
+        modal15.style.display = 'none'; // Corrigez 'visibily' en 'visibility' et 'hideen' en 'hidden'
+        location.reload()
+      });
+
+
+
+
+
+
+
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.fa-bed');
+      
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                let container = document.getElementById('lodgify-search-bar-container');
+                if (!container) {
+                    // Crée le conteneur
+                    container = document.createElement('div');
+                    container.id = 'lodgify-search-bar-container';
+                    container.style.display = 'none'; // Cache le conteneur par défaut
+                    container.style.position = 'fixed'; // Ou 'absolute'
+                    container.style.top = '50px'; // Ajustez selon vos besoins
+                    container.style.left = '0';
+                    container.style.width = '100%'; // Ajustez selon vos besoins
+                    container.style.height = '100%'; // Ajustez selon vos besoins
+                    container.style.zIndex = '1000'; // Assurez qu'il est bien visible
+      
+                    document.body.appendChild(container);
+      
+                    // Crée l'iframe
+                    const iframe = document.createElement('iframe');
+                    iframe.style.width = '100%'; // Ajustez selon vos besoins
+                    iframe.style.height = '100%'; // Ajustez selon vos besoins
+                    iframe.style.border = 'none';
+                    iframe.src = "./frame.html"; // URL de votre barre de recherche
+                    container.appendChild(iframe);
+      
+                    // Crée le bouton de fermeture
+                    const closeButton = document.createElement('button');
+                    closeButton.innerHTML = '&times;'; // Symbole de croix
+
+      
+                    closeButton.onclick = function() {
+                        container.style.display = 'none';
+                    };
+      
+                    container.appendChild(closeButton);
+                }
+                // Bascule l'affichage du conteneur
+                container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+      });
+    </script>
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
 

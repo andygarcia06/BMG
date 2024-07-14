@@ -1,14 +1,32 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="fr-FR" class="no-js">
   <head>
 
     <!-- Title -->
-    <title>Home | Lana - Creative Coming Soon Template</title>
+    <title>Blog sur la gestion locative à Nice - BeMyGuest</title>
 
-    <!-- Required Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bootstrap HTML template and UI kit by Erilisdesign">
+    <meta name="description" content="Découvrez les dernières actualités et conseils sur la gestion locative à Nice. Restez informé sur les meilleures pratiques en matière d'investissement immobilier à Nice grâce à nos articles de blog.">
+    <meta name="keywords" content="BeMyGuest, blog, gestion locative, Nice, articles, investissement immobilier">
+    <meta name="author" content="BeMyGuest">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Blog sur la gestion locative à Nice - BeMyGuest">
+    <meta property="og:description" content="Découvrez les dernières actualités et conseils sur la gestion locative à Nice. Restez informé sur les meilleures pratiques en matière d'investissement immobilier à Nice grâce à nos articles de blog.">
+    <meta property="og:image" content="https://bmg-nice-conciergerie.fr/"> <!-- Replace with an appropriate image URL -->
+    <meta property="og:url" content="https://bmg-nice-conciergerie.fr/service.html"> <!-- Replace with your blog's URL -->
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Canonical URL (if applicable) -->
+    <link rel="canonical" href="https://bmg-nice-conciergerie.fr/service.html"> <!-- Replace with your blog's URL -->
+    
+    <!-- Robots Meta Tags (optional) -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Viewport Meta Tag (for responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Language Meta Tag (if applicable) -->
+    <meta name="language" content="French">
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="assets/vendor/fullPage.js/dist/jquery.fullpage.min.css" type="text/css">
@@ -27,6 +45,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   </head>
   <body class="layout-boxed article-page slideshow-zoomout-background">
@@ -58,25 +78,27 @@
 
         <!-- Navigation -->
         <ul class="navbar-nav ml-auto" id="navigation">
-          <li class="nav-item " data-menuanchor="home">
+          <li class="nav-item active">
             <a class="nav-link" href="./index.html">Home</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-mission">
-            <a class="nav-link active" href="./solutions.html">Nos solutions</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./solutions-2.html">Nos solutions</a>
           </li>
-          <li class="nav-item" data-menuanchor="what-we-do">
-            <a class="nav-link" href="./index.html#our-solutions">A propos</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./about.html">A propos</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-solutions">
-            <a class="nav-link " href="./service.html">Blog</a>
+          <li class="nav-item" >
+            <a class="nav-link navbar-nav-active" href="./service.html">Blog</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-work">
+          <li class="nav-item" >
             <a class="nav-link" href="./biens.html">Nos biens</a>
           </li>
-          <li class="nav-item" data-menuanchor="contact">
+          <li class="nav-item">
             <a class="nav-link" href="./index.html#contact">Contactez-nous</a>
           </li>
         </ul>
+
+        <br>
 
 
       </div>
@@ -142,13 +164,16 @@
       <ul class="mx-auto">
         <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#!"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
+
         <li><a href="#!"><i class="fab ti-mobile "></i></a></li>
       </ul>
     </nav>
 
     <!-- Fullpage - Copyright -->
     <div class="ln-copyright text-right">
-      <p>© 2023 Lana - All Rights Reserved - <a href="#!">Terms of Service</a></p>
+      <p>© 2024 FrontHand 
+</p>
     </div>
 
     <!-- Documentation Modal -->
@@ -161,19 +186,7 @@
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
-          <!-- Modal Body -->
-          <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
 
-            <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-8">
-              <i class="ti-book"></i>
-            </div>
-            <h2 id="documentation" class="mb-3">Documentation</h2>
-            <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which will assist you in the configuration of your new website in few minutes.</p>
-
-            <!-- Button -->
-            <a class="btn btn-primary d-block d-lg-inline-block" href="!#">Buy theme</a>
-
-          </div>
 
         </div>
       </div>
@@ -278,10 +291,10 @@
             const isReverse = index % 2 !== 0;
             container.innerHTML += `
                 <div class="article ${isReverse ? 'reverse' : ''}">
-                    <img src="${article.image}" alt="${article.title}">
+                    <img class="main-article-img" src="${article.image}" alt="${article.title}">
                     <div>
-                        <h2>${article.title}</h2>
-                        <p>${article.content1.substring(0, 300)}...</p>
+                        <h2 class="main-article-h2">${article.title}</h2>
+                        <p class="main-article-p">${article.content1.substring(0, 300)}...</p>
                         <button class="btn btn-soft-white scrollto animated" onclick="location.href='article.html?id=${article.id}'">Consulter l'article</button>
                     </div>
                 </div>
@@ -293,6 +306,52 @@
     loadArticles();
     
       
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.fa-bed');
+      
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                let container = document.getElementById('lodgify-search-bar-container');
+                if (!container) {
+                    // Crée le conteneur
+                    container = document.createElement('div');
+                    container.id = 'lodgify-search-bar-container';
+                    container.style.display = 'none'; // Cache le conteneur par défaut
+                    container.style.position = 'fixed'; // Ou 'absolute'
+                    container.style.top = '50px'; // Ajustez selon vos besoins
+                    container.style.left = '0';
+                    container.style.width = '100%'; // Ajustez selon vos besoins
+                    container.style.height = '100%'; // Ajustez selon vos besoins
+                    container.style.zIndex = '1000'; // Assurez qu'il est bien visible
+      
+                    document.body.appendChild(container);
+      
+                    // Crée l'iframe
+                    const iframe = document.createElement('iframe');
+                    iframe.style.width = '100%'; // Ajustez selon vos besoins
+                    iframe.style.height = '100%'; // Ajustez selon vos besoins
+                    iframe.style.border = 'none';
+                    iframe.src = "./frame.html"; // URL de votre barre de recherche
+                    container.appendChild(iframe);
+      
+                    // Crée le bouton de fermeture
+                    const closeButton = document.createElement('button');
+                    closeButton.innerHTML = '&times;'; // Symbole de croix
+      
+                    closeButton.onclick = function() {
+                        container.style.display = 'none';
+                    };
+      
+                    container.appendChild(closeButton);
+                }
+                // Bascule l'affichage du conteneur
+                container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+      });
     </script>
 
   </body>

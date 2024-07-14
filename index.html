@@ -1,14 +1,39 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="fr-FR" class="no-js">
   <head>
 
     <!-- Title -->
     <title>Home | BeMyGuest</title>
 
     <!-- Required Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bootstrap HTML template and UI kit by Erilisdesign">
+    <!-- SEO Meta Tags for Homepage -->
+    <meta name="description" content="BeMyGuest - Votre partenaire de confiance pour la gestion locative à Nice. Maximisez le rendement de votre investissement immobilier à Nice avec nos services de gestion locative de qualité.">
+    <meta name="keywords" content="BeMyGuest, gestion locative, Nice, conciergerie, investissement immobilier">
+    <meta name="author" content="Andy GARCIA Fronthand">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Gestion locative à Nice - BeMyGuest">
+    <meta property="og:description" content="BeMyGuest - Votre partenaire de confiance pour la gestion locative à Nice. Maximisez le rendement de votre investissement immobilier à Nice avec nos services de gestion locative de qualité.">
+    <meta property="og:image" content="./assets/images/Logo + texte_modified_white.png"> 
+    <meta property="og:url" content="https://bmg-nice-conciergerie.fr/"> 
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+     <!-- Robots Meta Tags (optional) -->
+     <meta name="robots" content="index, follow">
+    
+     <!-- Viewport Meta Tag (for responsive design) -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- Language Meta Tag (if applicable) -->
+     <meta name="language" content="French">
+     
+     <!-- Geographical Meta Tags (if applicable) -->
+     <meta name="geo.region" content="FR">
+     <meta name="geo.placename" content="Nice">
+     <meta name="geo.position" content="43.7102;7.2620"> <!-- Latitude and Longitude -->
+     
+    
+    <link rel="canonical" href="https://bmg-nice-conciergerie.fr/"> <!-- Replace with your website URL -->
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="assets/vendor/fullPage.js/dist/jquery.fullpage.min.css" type="text/css">
@@ -25,6 +50,8 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -45,7 +72,7 @@
     <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white shadow-light p-lg-4" data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img src="assets/images/Logo + texte_modified_white.png" class="navbar-brand-img" alt="">      </a>
 
       <!-- Toggler -->
@@ -58,23 +85,23 @@
 
         <!-- Navigation -->
         <ul class="navbar-nav ml-auto" id="navigation">
-          <li class="nav-item active" data-menuanchor="home">
-            <a class="nav-link" href="./index.html">Home</a>
+          <li class="nav-item active">
+            <a class="nav-link navbar-nav-active" href="./index.html">Home</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-mission">
-            <a class="nav-link" href="./solutions.html">Nos solutions</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./solutions-2.html">Nos solutions</a>
           </li>
-          <li class="nav-item" data-menuanchor="what-we-do">
-            <a class="nav-link" href="#our-solutions">A propos</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./about.html">A propos</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-solutions">
+          <li class="nav-item" >
             <a class="nav-link" href="./service.html">Blog</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-work">
+          <li class="nav-item" >
             <a class="nav-link" href="./biens.html">Nos biens</a>
           </li>
-          <li class="nav-item" data-menuanchor="contact">
-            <a class="nav-link" href="#contact">Contactez-nous</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#contact">Contactez-nous</a>
           </li>
         </ul>
 
@@ -83,7 +110,7 @@
 
     <!-- Back To Top Button -->
     <a href="#top" class="backtotop">
-      <span>Retour en haut</span>
+      <span>Back To Top</span>
       <i class="fas fa-angle-up"></i>
     </a>
 
@@ -103,7 +130,7 @@
     <div class="ln-fullpage" data-navigation="true">
 
       <!-- Section - Home -->
-      <section class="ln-section d-flex js-min-vh-100" data-anchor="home" data-tooltip="Home" data-ui="light" data-navbar="navbar-dark">
+      <!-- <section class="ln-section d-flex js-min-vh-100" data-anchor="home" data-tooltip="Home" data-ui="light" data-navbar="navbar-dark">
         <div class="overlay overlay-advanced">
           <div class="overlay-inner bg-image-holder bg-cover bg-bottom-center">
             <img src="assets/images/parallax/parallax-5.JPG" alt="background">
@@ -113,92 +140,72 @@
         <div class="container align-self-center text-white">
           <div class="row">
             <div class="col-12 col-lg-9 col-xl-6">
-
+              <img class="home-logo" src="./assets/images/Logo + texte_modified_white.png" alt="">
               <h1 class="mb-4 animated" data-animation="fadeInUp"><span class="text-primary">Gestion locative</span><br> à Nice</h1>
               <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Maximisez vos location en toute simplicité grâce à nos outilis pour optimisez la gestion locative : les clés du succès pour les propriétaires</p>
               <a href="#our-mission" class="btn btn-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Découvrez nos solutions</a>
-              <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" >Contactez-nous</button>
+              <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" ><a href="#contact">Contactez-nous</a></button>
 
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
+            <!-- Home 2 -->
+
+            <section class="ln-section  d-flex js-min-vh-100" data-anchor="home" data-tooltip="Home" data-ui="light" data-navbar="navbar-dark">
+              <div class="overlay overlay-advanced">
+                <div class="overlay-inner bg-image-holder bg-cover bg-bottom-center">
+                  <img src="assets/images/parallax/parallax-5.JPG" alt="background">
+                </div>
+                <div class="overlay-inner bg-dark opacity-70"></div>
+              </div>
+              <div class="container-2-sides">
+                  <div class="section-2-sides locataire">
+                    <div class="row">
+                      <div class="col-12 col-lg-9 col-xl-6">
+                        <h1 class="mb-4 animated" data-animation="fadeInUp"><span class="text-primary">Trouvez votre location</span><br> à Nice</h1>
+                        <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Découvrez les meilleures offres de locations à Nice avec BeMyGuest, votre agence de conciergerie dédiée à vous trouver le bien parfait.</p>
+                        <a href="#our-mission" class="btn btn-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Nos biens</a>
+                        <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" ><a href="#contact">Contactez-nous</a></button>
+
+                      </div>
+                    </div>
+                      <button class="button-2-sides btn btn-soft-white scrollto animate" data-animation="fadeInUp" data-animation-delay="600" id="proprietaireBtn">Vous êtes un propriétaire ?</button>
+                  </div>
+                  <div class="section-2-sides proprietaire">
+                    <div class="row">
+                      <div class="col-12 col-lg-9 col-xl-6">
+                        <h1 class="mb-4 animated" data-animation="fadeInUp"><span class="text-primary">Gestion locative</span><br> à Nice</h1>
+                        <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Maximisez vos location en toute simplicité grâce à nos outilis pour optimisez la gestion locative : les clés du succès pour les propriétaires</p>
+                        <a href="#our-mission" class="btn btn-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Découvrez nos solutions</a>
+                        <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" ><a href="#contact">Contactez-nous</a></button>
+
+                      </div>
+                    </div>                      
+                    <button class="button-2-sides btn btn-soft-white scrollto animate"data-animation="fadeInUp" data-animation-delay="600"  id="locataireBtn">Vous souhaitez louer un bien ?</button>
+                  </div>
+              </div>
+            </section>
 
       <!-- Section - Our mission -->
       <section class="ln-section d-xl-flex" data-anchor="our-mission" data-tooltip="Our mission" data-ui="dark" data-navbar="navbar-light">
         <div class="container align-self-xl-center">
 
           <div class="row">
-            <div class="col-8 col-xl-6">
+            <div class="col-12 col-xl-12">
               <h2 class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">Nos solutions</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Nous proposons des solutions flexibles et personnalisées qui correspondront exactement à vos besoins tout en respectant les règlementations en vigueur à Nice.<br><br> Notre priorité est de proposer aux voyageurs la meilleure expérience tout en maximisant votre rentabilité. BMG permet également aux propriétaires de réserver leur bien quand bon leur semble à des fins personnelles.<br><br> Vous pouvez donc tout simplement choisir l'option qui vous correspond le mieux, en fonction de vos préférences.</p>
-            </div>
-            <div class="col-6">
-              <!-- Slider main container -->
-              <div class="swiper animated" data-animation="fadeInUp">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <div class="solution-container-img" id="solution-container-background-img-1">
-                      <a href="solution.html#conciergerie-solution-block-1" class="popup-link" id="btn1">
-                        <div class="solution-container" >
-                          <p class="">Offre</p>
-                          <div class="ligne-offer"></div>
-                          <h4> location courte durée </h4>
-                          <div class="ligne-offer"></div>
-                        <p class="">A partir de 20%</p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="solution-container-img" id="solution-container-background-img-2">
-                      <a href="solution.html#conciergerie-solution-block-2" class="popup-link" id="btn1">
-                        <div class="solution-container" >
-                          <p class="">Offre</p>
-                          <div class="ligne-offer"></div>
-                          <h4> Location bail mobilité</h4>
-                          <div class="ligne-offer"></div>
-                        <p class="">A partir de 12%</p>
-                        </div>
-                      </a>
-                      </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="solution-container-img" id="solution-container-background-img-3">
-                      <a href="solution.html#conciergerie-solution-block-3" class="popup-link" id="btn1">
-                        <div class="solution-container" >
-                          <p class="">Offre</p>
-                          <div class="ligne-offer"></div>
-                          <h4> Location mixte</h4>
-                          <div class="ligne-offer"></div>
-            
-                        <p class="">(étudiant/ <br>saisonnier)</p>
-                        </div>
-                      </a>
-                      </div>
-                  </div>
-                  ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Nice et ses alentours représentent aujourd'hui la deuxième destination la plus visitée de France, juste après Paris. Avec ses 5 millions de vacanciers chaque année, le marché des locations saisonnières a explosé, créant une concurrence intense entre propriétaires.
+                Pour se démarquer, il est crucial de redoubler d'efforts et de vigilance sur plusieurs aspect clefs. </p>
 
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+                <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Notre Chez Be My Guest, nous mettons notre expertise et notre parfaite connaissance de la région à votre service pour optimiser votre rentabilité et vous offrir une tranquillité d'esprit totale. Nos 3 fondateurs sont eux même investisseur à titre personnel dans des biens en location saisonnière depuis plus de 7 ans, nous connaissons donc très bien les attentes des propriétaires ! </p>
+                <button class="btn btn-primary animated" data-animation="fadeInUp" data-animation-delay="250" type="submit" id="cf-submit" name="cf-submit">Découvrir nos solutions</button>
 
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-              </div>
-            </div>
           </div>
 
         </div>
       </section>
 
-
-      <!-- Section - Our solutions -->
       <section class="ln-section d-xl-flex" data-anchor="our-solutions" data-tooltip="Our solutions" data-ui="light" data-navbar="navbar-dark">
         <div class="overlay overlay-advanced">
           <div class="overlay-inner bg-image-holder bg-cover">
@@ -216,22 +223,22 @@
 
             <div class="col-12 col-lg-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="150">
               <h4>Services de Conciergerie Personnalisés</h4>
-              <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
+              <p class="mb-0">Chez BeMyGuest, nous offrons bien plus qu'un simple service de conciergerie ; nous proposons une expérience sur-mesure adaptée à vos besoins uniques. Notre équipe dédiée est experte dans la création de solutions personnalisées qui transforment votre quotidien, en vous libérant des contraintes pour que vous puissiez profiter pleinement de chaque instant.</p>
             </div>
 
             <div class="col-12 col-lg-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
               <h4>Gestion Complète de la Location</h4>
-              <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
+              <p class="mb-0">Chez BeMyGuest, nous comprenons que la gestion d'une propriété locative peut être un défi. C'est pourquoi nous offrons un service de gestion complète de la location, conçu pour maximiser votre retour sur investissement tout en minimisant vos efforts. Laissez-nous prendre en charge toutes les tâches, des plus petites aux plus complexes, afin que vous puissiez profiter de votre investissement sans les tracas habituels.</p>
             </div>
 
             <div class="col-12 col-lg-6 mb-8 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="450">
               <h4>Expérience Client Exceptionnelle</h4>
-              <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
+              <p class="mb-0">Chez BeMyGuest, nous plaçons l'expérience client au cœur de notre mission. Nous sommes convaincus que chaque interaction avec nos clients est une opportunité de dépasser leurs attentes et de créer des souvenirs inoubliables. Notre engagement envers une qualité de service irréprochable nous distingue dans le domaine de la conciergerie et de la gestion locative à Nice.</p>
             </div>
 
             <div class="col-12 col-lg-6 animated" data-animation="fadeInUp" data-animation-delay="600">
               <h4>Optimisation des Rendements Locatifs</h4>
-              <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
+              <p class="mb-0">Chez BeMyGuest, nous comprenons l'importance d'optimiser le rendement de vos investissements locatifs. Notre expertise unique en gestion locative à Nice nous permet d'offrir des stratégies sur-mesure pour maximiser vos revenus et minimiser les périodes de vacance de votre bien immobilier. Profitez de notre savoir-faire pour transformer votre investissement en une source de revenus stable et croissante.</p>
             </div>
 
           </div>
@@ -243,7 +250,8 @@
         <div class="container align-self-xl-center">
           <div class="row mb-8">
             <div class="col-12 col-xl-6">
-              <h2 class="mb-4 animated" data-animation="fadeInUp">Nos derniers biens</h2>
+              <h2 class="mb-4 animated" data-animation="fadeInUp">Nos derniers biens</h2>              
+              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Chez BeMyGuest, nous comprenons que trouver le lieu de séjour parfait est essentiel pour une escapade mémorable.<br><br> Que vous recherchiez un appartement cosy avec vue sur la mer, une villa luxueuse avec piscine privée, ou un studio chic en plein centre-ville, notre portfolio diversifié est conçu pour répondre à tous vos désirs</p>
             </div>
           </div>
           <div class="slider animated" data-animation="fadeInUp" data-animation-delay="300" data-slick='{"dots": true}'>
@@ -377,7 +385,7 @@
         </div>
       </section>
 
-      <section class="ln-section d-xl-flex bg-light" data-anchor="contact" data-tooltip="Contact" data-ui="dark" data-navbar="navbar-light">
+      <section class="ln-section d-xl-flex bg-light contact" data-anchor="contact" data-tooltip="Contact" data-ui="dark" data-navbar="navbar-light" id="contact">
         <div class="container align-self-center">
           <div class="row mb-7">
             <div class="col-12 col-xl-6">
@@ -416,7 +424,7 @@
             </div>
             <div class="col-12 col-lg-6 offset-lg-1 animated" data-animation="fadeInUp" data-animation-delay="150">
               <div class="contact-form">
-                <form class="mb-0" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
+                <form class="mb-0" id="cf" name="cf"   action="https://formspree.io/f/xkndjeyp"method="post" autocomplete="off">
                   <div class="form-row">
 
                     <div class="col-12 col-md-6">
@@ -439,7 +447,7 @@
 
                     <div class="col-12 mb-4">
                       <div class="form-group">
-                        <textarea name="cf-message" id="cf-message" placeholder="Votre message" class="form-control required" rows="7"></textarea>
+                        <textarea name="message" id="cf-message" placeholder="Votre message" class="form-control required" rows="7"></textarea>
                       </div>
                     </div>
 
@@ -464,45 +472,15 @@
 
     </div>
 
-    <!-- Footer -->
-    <footer class="position-relative py-10 py-lg-12 bg-dark text-gray-500">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-xl-12 col-xxl-10 mx-auto text-center">
-            <ul class="list-inline mb-5">
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-facebook-f btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-twitter btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-linkedin-in btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-dribbble btn-icon-inner"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="mb-0">© 2023 Fronthand - All Rights Reserved - <a href="#!" class="text-gray-400">Terms of Service</a></p>
-          </div>
-        </div>
-      </div>
-    </footer><!-- footer end -->
+    
 
     <!-- Fullpage - Social icons -->
     <nav class="ln-social-icons">
       <ul class="mx-auto">
         <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#!" data-toggle="modal" data-target="#subscribeModal"><i class="fab ti-mobile "></i></a></li>
+        <li><a href="#!"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
+        <li><a href="#!" data-toggle="modal" data-target="#subscribeModal"><i class="fas fa-phone"></i></a></li>
       </ul> 
     </nav>
 
@@ -521,19 +499,7 @@
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
-          <!-- Modal Body -->
-          <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
 
-            <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-8">
-              <i class="ti-book"></i>
-            </div>
-            <h2 id="documentation" class="mb-3">Documentation</h2>
-            <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which will assist you in the configuration of your new website in few minutes.</p>
-
-            <!-- Button -->
-            <a class="btn btn-primary d-block d-lg-inline-block" href="!#">Buy theme</a>
-
-          </div>
 
         </div>
       </div>
@@ -583,6 +549,8 @@
     </div>
 
     <!-- Libs JS -->
+    
+    <!-- Theme JS -->
     <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendor/popper.js/dist/popper.min.js"></script>
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -598,32 +566,109 @@
     <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="assets/vendor/vegas/vegas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <script>
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
+      document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.fa-bed');
       
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                let container = document.getElementById('lodgify-search-bar-container');
+                if (!container) {
+                    // Crée le conteneur
+                    container = document.createElement('div');
+                    container.id = 'lodgify-search-bar-container';
+                    container.style.display = 'none'; // Cache le conteneur par défaut
+                    container.style.position = 'fixed'; // Ou 'absolute'
+                    container.style.top = '50px'; // Ajustez selon vos besoins
+                    container.style.left = '0';
+                    container.style.width = '100%'; // Ajustez selon vos besoins
+                    container.style.height = '100%'; // Ajustez selon vos besoins
+                    container.style.zIndex = '1000'; // Assurez qu'il est bien visible
       
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
+                    document.body.appendChild(container);
+      
+                    // Crée l'iframe
+                    const iframe = document.createElement('iframe');
+                    iframe.style.width = '100%'; // Ajustez selon vos besoins
+                    iframe.style.height = '100%'; // Ajustez selon vos besoins
+                    iframe.style.border = 'none';
+                    iframe.src = "./frame.html"; // URL de votre barre de recherche
+                    container.appendChild(iframe);
+      
+                    // Crée le bouton de fermeture
+                    const closeButton = document.createElement('button');
+                    closeButton.innerHTML = '&times;'; // Symbole de croix
+
+      
+                    closeButton.onclick = function() {
+                        container.style.display = 'none';
+                    };
+      
+                    container.appendChild(closeButton);
+                }
+                // Bascule l'affichage du conteneur
+                container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            });
+        });
       });
     </script>
+<!-- 2 sides script -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const locataire = document.querySelector('.locataire');
+    const proprietaire = document.querySelector('.proprietaire');
+    const proprietaireBtn = document.querySelector('.button-2-sides#proprietaireBtn');
+    const locataireBtn = document.querySelector('.button-2-sides#locataireBtn');
+    let isAnimating = false;
 
-    <!-- Theme JS -->
-    <script src="assets/js/main.js"></script>
+    function animateSections(expandSection, collapseSection) {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        expandSection.classList.add('expanding');
+        collapseSection.classList.add('collapsing');
+
+        let startWidth = 0;
+        let endWidth = 10;
+        let startTime = null;
+
+        function animate(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const progress = timestamp - startTime;
+            const duration = 500; // 0.5 secondes
+            
+            const newWidth = startWidth + (endWidth - startWidth) * (progress / duration);
+
+            expandSection.style.flex = newWidth;
+            collapseSection.style.flex = 10 - newWidth;
+
+            if (progress < duration) {
+                requestAnimationFrame(animate);
+            } else {
+                expandSection.style.flex = 10;
+                collapseSection.style.flex = 0;
+                expandSection.classList.remove('collapsing');
+                collapseSection.classList.remove('expanding');
+                isAnimating = false;
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    proprietaireBtn.addEventListener('click', function() {
+        animateSections(proprietaire, locataire);
+    });
+
+    locataireBtn.addEventListener('click', function() {
+        animateSections(locataire, proprietaire);
+    });
+});
+
+    </script>
+
 
   </body>
 </html>

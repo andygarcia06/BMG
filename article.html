@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="fr-FR" class="no-js">
   <head>
 
     <!-- Title -->
@@ -30,6 +30,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   </head>
   <body class="layout-wide">
@@ -47,7 +49,7 @@
     <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white shadow-light p-lg-4" data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img src="assets/images/Logo + texte_modified_white.png" class="navbar-brand-img" alt="">      </a>
 
       <!-- Toggler -->
@@ -59,23 +61,23 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <!-- Navigation -->
-        <ul class="navbar-nav ml-auto" id="navigation">
-          <li class="nav-item active" data-menuanchor="home">
+      <ul class="navbar-nav ml-auto" id="navigation">
+          <li class="nav-item active">
             <a class="nav-link" href="./index.html">Home</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-mission">
-            <a class="nav-link" href="./solutions.html">Nos solutions</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="./solutions-2.html">Nos solutions</a>
           </li>
-          <li class="nav-item" data-menuanchor="what-we-do">
-            <a class="nav-link" href="#what-we-do">A propos</a>
+          <li class="nav-item" >
+            <a class="nav-link" href="#our-solutions">A propos</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-solutions">
+          <li class="nav-item" >
             <a class="nav-link" href="./service.html">Blog</a>
           </li>
-          <li class="nav-item" data-menuanchor="our-work">
+          <li class="nav-item" >
             <a class="nav-link" href="./biens.html">Nos biens</a>
           </li>
-          <li class="nav-item" data-menuanchor="contact">
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contactez-nous</a>
           </li>
         </ul>
@@ -124,6 +126,8 @@
         </div>
       </section>
 
+
+
       <!-- Section - Our mission -->
       <section class="ln-section d-xl-flex" id="our-goods" data-anchor="our-mission" data-tooltip="Our mission" data-ui="dark" data-navbar="navbar-light">
         <div id="article-detail-container"></div>
@@ -138,6 +142,7 @@
       <ul class="mx-auto">
         <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
         <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#!"><i class="fa fa-bed" aria-hidden="true"></i></a></li>
         <li><a href="#!"><i class="fab ti-mobile "></i></a></li>
       </ul>
     </nav>
@@ -157,19 +162,7 @@
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
-          <!-- Modal Body -->
-          <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
 
-            <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-8">
-              <i class="ti-book"></i>
-            </div>
-            <h2 id="documentation" class="mb-3">Documentation</h2>
-            <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which will assist you in the configuration of your new website in few minutes.</p>
-
-            <!-- Button -->
-            <a class="btn btn-primary d-block d-lg-inline-block" href="!#">Buy theme</a>
-
-          </div>
 
         </div>
       </div>
@@ -265,6 +258,53 @@
   loadArticle();
   
     
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.fa-bed');
+      
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                let container = document.getElementById('lodgify-search-bar-container');
+                if (!container) {
+                    // Crée le conteneur
+                    container = document.createElement('div');
+                    container.id = 'lodgify-search-bar-container';
+                    container.style.display = 'none'; // Cache le conteneur par défaut
+                    container.style.position = 'fixed'; // Ou 'absolute'
+                    container.style.top = '50px'; // Ajustez selon vos besoins
+                    container.style.left = '0';
+                    container.style.width = '100%'; // Ajustez selon vos besoins
+                    container.style.height = '100%'; // Ajustez selon vos besoins
+                    container.style.zIndex = '1000'; // Assurez qu'il est bien visible
+      
+                    document.body.appendChild(container);
+      
+                    // Crée l'iframe
+                    const iframe = document.createElement('iframe');
+                    iframe.style.width = '100%'; // Ajustez selon vos besoins
+                    iframe.style.height = '100%'; // Ajustez selon vos besoins
+                    iframe.style.border = 'none';
+                    iframe.src = "./frame.html"; // URL de votre barre de recherche
+                    container.appendChild(iframe);
+      
+                    // Crée le bouton de fermeture
+                    const closeButton = document.createElement('button');
+                    closeButton.innerHTML = '&times;'; // Symbole de croix
+     
+      
+                    closeButton.onclick = function() {
+                        container.style.display = 'none';
+                    };
+      
+                    container.appendChild(closeButton);
+                }
+                // Bascule l'affichage du conteneur
+                container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+      });
     </script>
 
     <!-- Theme JS -->

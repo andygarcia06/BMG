@@ -1,14 +1,39 @@
 ﻿<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="fr-FR" class="no-js">
   <head>
 
     <!-- Title -->
-    <title>Home | Lana - Creative Coming Soon Template</title>
+    <title>Home | BeMyGuest</title>
 
     <!-- Required Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Bootstrap HTML template and UI kit by Erilisdesign">
+    <!-- SEO Meta Tags for Homepage -->
+    <meta name="description" content="BeMyGuest - Votre partenaire de confiance pour la gestion locative à Nice. Maximisez le rendement de votre investissement immobilier à Nice avec nos services de gestion locative de qualité.">
+    <meta name="keywords" content="BeMyGuest, gestion locative, Nice, conciergerie, investissement immobilier">
+    <meta name="author" content="Andy GARCIA Fronthand">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Gestion locative à Nice - BeMyGuest">
+    <meta property="og:description" content="BeMyGuest - Votre partenaire de confiance pour la gestion locative à Nice. Maximisez le rendement de votre investissement immobilier à Nice avec nos services de gestion locative de qualité.">
+    <meta property="og:image" content="./assets/images/Logo + texte_modified_white.png"> 
+    <meta property="og:url" content="https://bmg-nice-conciergerie.fr/"> 
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+     <!-- Robots Meta Tags (optional) -->
+     <meta name="robots" content="index, follow">
+    
+     <!-- Viewport Meta Tag (for responsive design) -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- Language Meta Tag (if applicable) -->
+     <meta name="language" content="French">
+     
+     <!-- Geographical Meta Tags (if applicable) -->
+     <meta name="geo.region" content="FR">
+     <meta name="geo.placename" content="Nice">
+     <meta name="geo.position" content="43.7102;7.2620"> <!-- Latitude and Longitude -->
+     
+    
+    <link rel="canonical" href="https://bmg-nice-conciergerie.fr/"> <!-- Replace with your website URL -->
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="assets/vendor/fullPage.js/dist/jquery.fullpage.min.css" type="text/css">
@@ -18,6 +43,7 @@
     <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="assets/vendor/themify-icons/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CMontserrat:200,300,400,500,700&display=swap">
@@ -29,7 +55,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
   </head>
-  <body class="layout-boxed slideshow-video-background">
+  <body class="layout-wide">
 
     <!-- Loader -->
     <div class="loader bg-dark">
@@ -44,7 +70,7 @@
     <nav class="site-navbar site-navbar-transparent navbar navbar-expand-lg navbar-dark fixed-top bg-white shadow-light p-lg-4" data-navbar-base="navbar-dark" data-navbar-toggled="navbar-light" data-navbar-scrolled="navbar-light">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./index.html">
         <img src="assets/images/Logo + texte_modified_white.png" class="navbar-brand-img" alt="">      </a>
 
       <!-- Toggler -->
@@ -58,44 +84,33 @@
         <!-- Navigation -->
         <ul class="navbar-nav ml-auto" id="navigation">
           <li class="nav-item active" data-menuanchor="home">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item" data-menuanchor="our-mission">
-            <a class="nav-link" href="#our-mission">Our mission</a>
+            <a class="nav-link" href="./solutions-2.html">Nos solutions</a>
           </li>
           <li class="nav-item" data-menuanchor="what-we-do">
-            <a class="nav-link" href="#what-we-do">What we do</a>
+            <a class="nav-link" href="#our-solutions">A propos</a>
           </li>
           <li class="nav-item" data-menuanchor="our-solutions">
-            <a class="nav-link" href="#our-solutions">Our solutions</a>
+            <a class="nav-link" href="./service.html">Blog</a>
           </li>
           <li class="nav-item" data-menuanchor="our-work">
-            <a class="nav-link" href="#our-work">Our work</a>
+            <a class="nav-link" href="./biens.html">Nos biens</a>
           </li>
           <li class="nav-item" data-menuanchor="contact">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contactez-nous</a>
           </li>
         </ul>
-
-        <!-- Button -->
-        <button type="button" class="btn btn-soft-white d-block d-lg-none d-xl-inline-block mb-3 mb-lg-0 ml-lg-3 w-100 w-lg-auto" data-toggle="modal" data-target="#documentationModal" data-on-navbar-light="btn-soft-secondary" data-on-navbar-dark="btn-soft-white">Documentation</button>
-
-        <!-- Button -->
-        <a class="btn btn-primary d-block d-lg-inline-block ml-lg-3" href="!#">Buy now</a>
 
       </div>
     </nav>
 
     <!-- Back To Top Button -->
     <a href="#top" class="backtotop">
-      <span>Back To Top</span>
+      <span>Retour en haut</span>
       <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Global overlay -->
-    <div class="overlay overlay-global">
-      <div class="overlay-inner bg-dark opacity-70"></div>
-    </div>
 
     <!-- Scroll progress -->
     <div class="scroll-progress">
@@ -113,15 +128,21 @@
     <div class="ln-fullpage" data-navigation="true">
 
       <!-- Section - Home -->
-      <section class="ln-section d-flex js-min-vh-100" data-anchor="home" data-tooltip="Home">
-        <div class="container align-self-center text-center text-white">
+      <section class="ln-section d-flex js-min-vh-100" data-anchor="home" data-tooltip="Home" data-ui="light" data-navbar="navbar-dark">
+        <div class="overlay overlay-advanced">
+          <div class="overlay-inner bg-image-holder bg-cover bg-bottom-center">
+            <img src="assets/images/parallax/parallax-5.JPG" alt="background">
+          </div>
+          <div class="overlay-inner bg-dark opacity-70"></div>
+        </div>
+        <div class="container align-self-center text-white">
           <div class="row">
-            <div class="col-12 col-xl-9 mx-auto">
+            <div class="col-12 col-lg-9 col-xl-6">
 
-              <h1 class="mb-4 animated" data-animation="fadeInUp">We bulid beautiful digital experiences</h1>
-              <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">A beautiful and easy to use template that lets you create the perfect website for your future agency or business.</p>
-              <a href="#our-mission" class="btn btn-primary mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Learn more</a>
-              <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" data-toggle="modal" data-target="#subscribeModal">Subscribe</button>
+              <h1 class="mb-4 animated" data-animation="fadeInUp"><span class="text-primary">Gestion locative</span><br> à Nice</h1>
+              <p class="mb-7 animated" data-animation="fadeInUp" data-animation-delay="200">Maximisez vos location en toute simplicité grâce à nos outilis pour optimisez la gestion locative : les clés du succès pour les propriétaires</p>
+              <a href="#our-mission" class="btn btn-white mr-3 scrollto animated" data-animation="fadeInUp" data-animation-delay="400">Découvrez nos solutions</a>
+              <button type="button" class="btn btn-soft-white scrollto animated" data-animation="fadeInUp" data-animation-delay="600" ><a href="#contact">Contactez-nous</a></button>
 
             </div>
           </div>
@@ -129,73 +150,67 @@
       </section>
 
       <!-- Section - Our mission -->
-      <section class="ln-section d-xl-flex" data-anchor="our-mission" data-tooltip="Our mission">
-        <div class="container align-self-xl-center text-white">
+      <section class="ln-section d-xl-flex" data-anchor="our-mission" data-tooltip="Our mission" data-ui="dark" data-navbar="navbar-light" id="our-mission">
+        <div class="container align-self-xl-center">
 
-          <div class="row">
-            <div class="col-12 col-xl-8">
-              <h2 class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">Our Mission</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Mauris ut sem elementum, tristique velit sed, volutpat mauris. Ut interdum nibh sit amet imperdiet condimentum. Nulla sed tellus placerat, vehicula risus ac, sollicitudin quam. Quisque pharetra porta libero, a sagittis nisl tristique non. Etiam sapien purus, cursus eu pulvinar et, tempor sit amet ipsum. Sed a nisl sit amet lorem dictum hendrerit.</p>
+          <div class="row bmg-solution-swiper-conciergerie">
+            <div class="col-12 col-xl-6  bmg-solution-guest">
+              <h2 class="mb-4 animated" data-animation="fadeInUp" data-animation-delay="150">Nos solutions</h2>
+              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Nous proposons des solutions flexibles et personnalisées qui correspondront exactement à vos besoins tout en respectant les règlementations en vigueur à Nice.<br><br> Notre priorité est de proposer aux voyageurs la meilleure expérience tout en maximisant votre rentabilité. BMG permet également aux propriétaires de réserver leur bien quand bon leur semble à des fins personnelles.<br><br> Vous pouvez donc tout simplement choisir l'option qui vous correspond le mieux, en fonction de vos préférences.</p>
+              <button type="button" class="btn btn-soft-white scrollto animated btn-solution-swiper" data-animation="fadeInUp" data-animation-delay="600" ><a href="./solutions-2.html">Decouvrir nos solutions</a></button>
+
             </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Section - What we do -->
-      <section class="ln-section d-xl-flex" data-anchor="what-we-do" data-tooltip="What we do">
-        <div class="container align-self-xl-center text-white">
-
-          <div class="row">
-            <div class="col-12 col-xl-5 mb-8 mb-xl-0">
-              <h2 class="animated mb-4" data-animation="fadeInUp">What we Do</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150"><span>Fusce massa dolor, mattis sed ultrices ut, placerat ut leo. Donec sed fringilla lectus, non vulputate orci. Integer id libero euismod, interdum ligula vel, porttitor magna. Sed euismod maximus finibus. Pellentesque tempus ultricies nisi at cursus. Nulla at nisi tellus. Suspendisse potenti.</span></p>
-            </div>
-            <div class="col-12 col-xl-6 offset-xl-1">
-              <div class="row">
-
-                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp">
-                  <div class="icon-7x mb-4">
-                    <i class="ti-timer"></i>
+            <div class="col-lg-6 col bmg-container-solution">
+              <!-- Slider main container -->
+              <div class="swiper animated" data-animation="fadeInUp">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="solution-container-img" id="solution-container-background-img-1">
+                        <div class="solution-container" >
+                          <p class="">Offre</p>
+                          <div class="ligne-offer"></div>
+                          <h4> location courte durée </h4>
+                          <div class="ligne-offer"></div>
+                        <p class="">A partir de 20%</p>
+                        </div>
+                    </div>
                   </div>
-                  <h3 class="h4 mb-0">Launch Quickly</h3>
-                </div>
-
-                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-7x mb-4">
-                    <i class="ti-brush-alt"></i>
+                  <div class="swiper-slide">
+                    <div class="solution-container-img" id="solution-container-background-img-2">
+                        <div class="solution-container" >
+                          <p class="">Offre</p>
+                          <div class="ligne-offer"></div>
+                          <h4> Location bail mobilité</h4>
+                          <div class="ligne-offer"></div>
+                        <p class="">A partir de 12%</p>
+                        </div>
+                      </div>
                   </div>
-                  <h3 class="h4 mb-0">Stylish Design</h3>
-                </div>
-
-                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
-                  <div class="icon-7x mb-4">
-                    <i class="ti-book"></i>
+                  <div class="swiper-slide">
+                    <div class="solution-container-img" id="solution-container-background-img-3">
+                        <div class="solution-container" >
+                          <p class="">Offre</p>
+                          <div class="ligne-offer"></div>
+                          <h4> Location mixte</h4>
+                          <div class="ligne-offer"></div>
+            
+                        <p class="">(étudiant/ <br>saisonnier)</p>
+                        </div>
+                      </div>
                   </div>
-                  <h3 class="h4 mb-0">Well Documented</h3>
+                  ...
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="450">
-                  <div class="icon-7x mb-4">
-                    <i class="ti-layers"></i>
-                  </div>
-                  <h3 class="h4 mb-0">Multiple Styles</h3>
-                </div>
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
 
-                <div class="col-md-6 col-sm-6 mb-8 mb-sm-0 animated" data-animation="fadeInUp" data-animation-delay="600">
-                  <div class="icon-7x mb-4">
-                    <i class="ti-settings"></i>
-                  </div>
-                  <h3 class="h4 mb-0">Fully Customizable</h3>
-                </div>
-
-                <div class="col-md-6 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="750">
-                  <div class="icon-7x mb-4">
-                    <i class="ti-headphone-alt"></i>
-                  </div>
-                  <h3 class="h4 mb-0">Friendly Support</h3>
-                </div>
-
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
               </div>
             </div>
           </div>
@@ -203,62 +218,66 @@
         </div>
       </section>
 
+
       <!-- Section - Our solutions -->
-      <section class="ln-section d-xl-flex" data-anchor="our-solutions" data-tooltip="Our solutions">
+      <section class="ln-section d-xl-flex" data-anchor="our-solutions" data-tooltip="Our solutions" data-ui="light" data-navbar="navbar-dark">
+        <div class="overlay overlay-advanced">
+          <div class="overlay-inner bg-image-holder bg-cover">
+            <img src="assets/images/parallax/parallax-6.JPG" alt="background">
+          </div>
+          <div class="overlay-inner bg-dark opacity-50"></div>
+        </div>
         <div class="container align-self-xl-center text-white">
           <div class="row mb-8">
-            <div class="col-12 col-xl-9">
-              <h2 class="mb-4 animated" data-animation="fadeInUp">A complete marketing solution</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Mauris ut sem elementum, tristique velit sed, volutpat mauris. Ut interdum nibh sit amet imperdiet condimentum. Nulla sed tellus placerat, vehicula risus ac, sollicitudin quam. Quisque pharetra porta libero, a sagittis nisl tristique non.</p>
+            <div class="col-12 col-xl-6">
+              <h2 class="mb-4 animated" data-animation="fadeInUp">A propos de nous</h2>
             </div>
           </div>
           <div class="row">
 
             <div class="col-12 col-lg-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="150">
-              <h4>We are</h4>
+              <h4>Services de Conciergerie Personnalisés</h4>
               <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
             </div>
 
             <div class="col-12 col-lg-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
-              <h4>We practice</h4>
+              <h4>Gestion Complète de la Location</h4>
               <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
             </div>
 
             <div class="col-12 col-lg-6 mb-8 mb-lg-0 animated" data-animation="fadeInUp" data-animation-delay="450">
-              <h4>We deliver</h4>
+              <h4>Expérience Client Exceptionnelle</h4>
               <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
             </div>
 
             <div class="col-12 col-lg-6 animated" data-animation="fadeInUp" data-animation-delay="600">
-              <h4>We create and innovate</h4>
+              <h4>Optimisation des Rendements Locatifs</h4>
               <p class="mb-0">Quisque ultrices non velit sit amet consectetur. Cras turpis dolor, facilisis a nibh non, ullamcorper facilisis mauris. Nulla rutrum arcu sed ligula malesuada, quis condimentum eros sollicitudin. Morbi eget lorem turpis. Maecenas id metus sapien. Aliquam et est turpis. Sed sit amet dui vel sapien sagittis pellentesque nec id sem.</p>
             </div>
 
           </div>
         </div>
-      </section>
-      
+      </section
 
       <!-- Section - Our work -->
-      <section class="ln-section d-xl-flex" data-anchor="our-work" data-tooltip="Our work">
-        <div class="container align-self-xl-center text-white ">
+      <section class="ln-section d-xl-flex" data-anchor="our-work" data-tooltip="Our work" data-ui="dark" data-navbar="navbar-light">
+        <div class="container align-self-xl-center">
           <div class="row mb-8">
-            <div class="col-12 col-xl-8">
-              <h2 class="mb-4 animated" data-animation="fadeInUp">Our Work</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Donec sollicitudin libero vitae massa placerat tempor. Duis rutrum nisl eu ipsum varius, nec feugiat tortor vulputate. Integer pellentesque leo id metus dictum, a tristique tellus faucibus.</p>
+            <div class="col-12 col-xl-6">
+              <h2 class="mb-4 animated" data-animation="fadeInUp">Nos derniers biens</h2>
             </div>
           </div>
-          <div class="slider dots-light animated" data-animation="fadeInUp" data-animation-delay="300" data-slick='{"dots": true}'>
+          <div class="slider animated" data-animation="fadeInUp" data-animation-delay="300" data-slick='{"dots": true}'>
 
             <div>
               <div class="portfolio-item mb-8">
                 <div class="row">
                   <div class="col-12 col-lg-7 mb-4 mb-lg-0">
                     <div class="item-media">
-                      <a href="assets/images/portfolio/project-6.jpg" class="mfp-image">
+                      <a href="assets/images/flat-img/flat-1/flat-1.png" class="mfp-image">
                         <div class="media-container">
                           <div class="bg-image-holder bg-cover">
-                            <img src="assets/images/portfolio/project-6-min.jpg" alt="">
+                            <img src="assets/images/flat-img/flat-1/flat-1.png" alt="">
                           </div>
                         </div>
                       </a>
@@ -266,9 +285,9 @@
                   </div>
                   <div class="col-12 col-lg-5">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-white mt-0 mb-8 d-none d-lg-block"></div>
-                      <h4 class="h3">Mountains</h4>
-                      <p class="text-italic">Web Design</p>
+                      <div class="divider divider-alt bg-dark mt-0 mb-8 d-none d-lg-block"></div>
+                      <h4 class="h3 item-title">GRAND APPARTEMMENT AU COEUR DE NICE</h4>
+                      <p class="item-cat">Nice</p>
                     </div>
                   </div>
                 </div>
@@ -280,10 +299,10 @@
                 <div class="row flex-lg-row-reverse">
                   <div class="col-12 col-lg-7 mb-4 mb-lg-0">
                     <div class="item-media">
-                      <a href="assets/images/portfolio/project-1.jpg" class="mfp-image">
+                      <a href="assets/images/flat-img/flat-2/flat-1.webp" class="mfp-image">
                         <div class="media-container">
                           <div class="bg-image-holder bg-cover">
-                            <img src="assets/images/portfolio/project-1-min.jpg" alt="">
+                            <img src="assets/images/flat-img/flat-2/flat-1.webp" alt="">
                           </div>
                         </div>
                       </a>
@@ -291,9 +310,9 @@
                   </div>
                   <div class="col-12 col-lg-5 d-lg-flex justify-content-lg-end text-lg-right">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-white mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
-                      <h4 class="h3">Love</h4>
-                      <p class="text-italic">Web Design</p>
+                      <div class="divider divider-alt bg-dark mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
+                      <h4 class="h3 item-title">NID DOUILLET AU COEUR DE LA VILLE</h4>
+                      <p class="item-cat">Nice</p>
                     </div>
                   </div>
                 </div>
@@ -305,10 +324,10 @@
                 <div class="row">
                   <div class="col-12 col-lg-7 mb-4 mb-lg-0">
                     <div class="item-media">
-                      <a href="assets/images/portfolio/project-2.jpg" class="mfp-image">
+                      <a href="assets/images/flat-img/flat-4/flat-1.webp" class="mfp-image">
                         <div class="media-container">
                           <div class="bg-image-holder bg-cover">
-                            <img src="assets/images/portfolio/project-2-min.jpg" alt="">
+                            <img src="assets/images/flat-img/flat-4/flat-1.webp" alt="">
                           </div>
                         </div>
                       </a>
@@ -316,9 +335,9 @@
                   </div>
                   <div class="col-12 col-lg-5">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-white mt-0 mb-8 d-none d-lg-block"></div>
-                      <h4 class="h3">Beautiful Girl</h4>
-                      <p class="text-italic">Brand</p>
+                      <div class="divider divider-alt bg-dark mt-0 mb-8 d-none d-lg-block"></div>
+                      <h4 class="h3 item-title">VILLA CONTEMPORAINE DANS LES HAUTEURS</h4>
+                      <p class="item-cat">Nice</p>
                     </div>
                   </div>
                 </div>
@@ -330,10 +349,10 @@
                 <div class="row flex-lg-row-reverse">
                   <div class="col-12 col-lg-7 mb-4 mb-lg-0">
                     <div class="item-media">
-                      <a href="assets/images/portfolio/project-3.jpg" class="mfp-image">
+                      <a href="assets/images/flat-img/flat-3/flat-1.webp" class="mfp-image">
                         <div class="media-container">
                           <div class="bg-image-holder bg-cover">
-                            <img src="assets/images/portfolio/project-3-min.jpg" alt="">
+                            <img src="assets/images/flat-img/flat-3/flat-1.webp" alt="">
                           </div>
                         </div>
                       </a>
@@ -341,9 +360,9 @@
                   </div>
                   <div class="col-12 col-lg-5 d-lg-flex justify-content-lg-end text-lg-right">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-white mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
-                      <h4 class="h3">Future City</h4>
-                      <p class="text-italic">Web Design</p>
+                      <div class="divider divider-alt bg-dark mt-0 mb-8 ml-auto mr-0 d-none d-lg-block"></div>
+                      <h4 class="h3 item-title">GRAND APPARTEMENT AU CENTRE DE NICE</h4>
+                      <p class="item-cat">Nice</p>
                     </div>
                   </div>
                 </div>
@@ -355,10 +374,10 @@
                 <div class="row">
                   <div class="col-12 col-lg-7 mb-4 mb-lg-0">
                     <div class="item-media">
-                      <a href="assets/images/portfolio/project-4.jpg" class="mfp-image">
+                      <a href="assets/images/flat-img/flat-5/flat-1.webp" class="mfp-image">
                         <div class="media-container">
                           <div class="bg-image-holder bg-cover">
-                            <img src="assets/images/portfolio/project-4-min.jpg" alt="">
+                            <img src="assets/images/flat-img/flat-5/flat-5.webp" alt="">
                           </div>
                         </div>
                       </a>
@@ -366,9 +385,9 @@
                   </div>
                   <div class="col-12 col-lg-5">
                     <div class="pt-lg-8">
-                      <div class="divider divider-alt bg-white mt-0 mb-8 d-none d-lg-block"></div>
-                      <h4 class="h3">Golden Gate Bridge</h4>
-                      <p class="text-italic">Design</p>
+                      <div class="divider divider-alt bg-dark mt-0 mb-8 d-none d-lg-block"></div>
+                      <h4 class="h3 item-title">L'ATELIER MAISON - PISCINE JARDIN ET VUE SUR LES COLLINES DE NICE</h4>
+                      <p class="item-cat">Nice</p>
                     </div>
                   </div>
                 </div>
@@ -379,13 +398,12 @@
         </div>
       </section>
 
-      <!-- Section - Contact -->
-      <section class="ln-section d-xl-flex" data-anchor="contact" data-tooltip="Contact">
-        <div class="container align-self-center text-white">
+      <section class="ln-section d-xl-flex bg-light contact" data-anchor="contact" data-tooltip="Contact" data-ui="dark" data-navbar="navbar-light" id="contact">
+        <div class="container align-self-center">
           <div class="row mb-7">
             <div class="col-12 col-xl-6">
-              <h2 class="mb-4 animated" data-animation="fadeInUp">Contact Us</h2>
-              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Want to say hello? Want to know more about us? Give us a call or drop us an email and we will get back to you as soon as we can.</p>
+              <h2 class="mb-4 animated" data-animation="fadeInUp">Contactez-nous</h2>
+              <p class="animated" data-animation="fadeInUp" data-animation-delay="150">Que ce soit pour discuter de nos services de gestion locative, planifier une consultation ou simplement en savoir plus sur la manière dont BeMyGuest peut maximiser le rendement de votre investissement, n'hésitez pas à nous contacter. Nous sommes impatients de collaborer avec vous et de vous offrir une solution sur mesure pour répondre à vos besoins.</p>
             </div>
           </div>
           <div class="row">
@@ -393,57 +411,56 @@
               <div class="row">
 
                 <div class="col-12 col-md-4 col-lg-6 mb-8 mb-md-0 mb-lg-5 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-5x mb-4">
+                  <div class="icon-5x text-primary mb-4">
                     <i class="ti-mobile"></i>
                   </div>
-                  <p class="mb-0">(0091) 1111 1234567<br/>
-                  (084) 2222 1234567</p>
+                  <p class="mb-0">+33 6 98 62 42 26<br/>
+                  0698624226</p>
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-6 mb-8 mb-md-0 mb-lg-5 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-5x mb-4">
+                  <div class="icon-5x text-primary mb-4">
                     <i class="ti-location-pin"></i>
                   </div>
-                  <p class="mb-0">69 Halsey St, New York, Ny 10002,<br/>
-                  United States</p>
+                  <p class="mb-0">,Nice<br/>
+                  France</p>
                 </div>
 
                 <div class="col-12 col-md-4 col-lg-6 animated" data-animation="fadeInUp" data-animation-delay="150">
-                  <div class="icon-5x mb-4">
+                  <div class="icon-5x text-primary mb-4">
                     <i class="ti-email"></i>
                   </div>
-                  <p class="mb-0"><a href="mailto:support@example.com" class="text-white">support@example.com</a><br/>
-                  <a href="mailto:hello@example.com" class="text-white">hello@example.com</a></p>
+                  <p class="mb-0"><a href="mailto:anthony.gastaud@outlook.fr" class="text-dark">anthony.gastaud@outlook.fr</a><br/>
                 </div>
 
               </div>
             </div>
             <div class="col-12 col-lg-6 offset-lg-1 animated" data-animation="fadeInUp" data-animation-delay="150">
               <div class="contact-form">
-                <form class="mb-0" id="cf" name="cf" action="include/sendemail.php" method="post" autocomplete="off">
+                <form class="mb-0" id="cf" name="cf" action="./mailer.php" method="post" autocomplete="off">
                   <div class="form-row">
 
                     <div class="col-12 col-md-6">
                       <div class="form-group">
-                        <input type="text" id="cf-name" name="cf-name" placeholder="Enter your name" class="form-control required">
+                        <input type="text" id="cf-name" name="cf-name" placeholder="Votre nom" class="form-control required">
                       </div>
                     </div>
 
                     <div class="col-12 col-md-6">
                       <div class="form-group">
-                        <input type="email" id="cf-email" name="cf-email" placeholder="Enter your email address" class="form-control required">
+                        <input type="email" id="cf-email" name="cf-email" placeholder="Votre email" class="form-control required">
                       </div>
                     </div>
 
                     <div class="col-12">
                       <div class="form-group">
-                        <input type="text" id="cf-subject" name="cf-subject" placeholder="Subject (Optional)" class="form-control">
+                        <input type="text" id="cf-subject" name="cf-subject" placeholder="Sujet" class="form-control">
                       </div>
                     </div>
 
                     <div class="col-12 mb-4">
                       <div class="form-group">
-                        <textarea name="cf-message" id="cf-message" placeholder="Here goes your message" class="form-control required" rows="7"></textarea>
+                        <textarea name="cf-message" id="cf-message" placeholder="Votre message" class="form-control required" rows="7"></textarea>
                       </div>
                     </div>
 
@@ -454,7 +471,7 @@
                     <input type="hidden" name="prefix" value="cf-">
 
                     <div class="col-12">
-                      <button class="btn btn-soft-white" type="submit" id="cf-submit" name="cf-submit">Send Message</button>
+                      <button class="btn btn-primary" type="submit" id="cf-submit" name="cf-submit">envoyer votre message</button>
                     </div>
 
                   </div>
@@ -468,52 +485,20 @@
 
     </div>
 
-    <!-- Footer -->
-    <footer class="position-relative py-10 py-lg-12 bg-dark text-gray-500">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-xl-12 col-xxl-10 mx-auto text-center">
-            <ul class="list-inline mb-5">
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-facebook-f btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-twitter btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-linkedin-in btn-icon-inner"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mx-0">
-                <a class="btn btn-icon btn-text-secondary text-gray-400" href="#" tabindex="0">
-                  <i class="fab fa-dribbble btn-icon-inner"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="mb-0">© 2023 Lana - All Rights Reserved - <a href="#!" class="text-gray-400">Terms of Service</a></p>
-          </div>
-        </div>
-      </div>
-    </footer><!-- footer end -->
+
 
     <!-- Fullpage - Social icons -->
     <nav class="ln-social-icons">
       <ul class="mx-auto">
         <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
         <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#!"><i class="fab fa-pinterest"></i></a></li>
-      </ul>
+        <li><a href="#!" data-toggle="modal" data-target="#subscribeModal"><i class="fas fa-phone"></i></a></li>
+      </ul> 
     </nav>
 
     <!-- Fullpage - Copyright -->
     <div class="ln-copyright text-right">
-      <p>© 2023 Lana - All Rights Reserved - <a href="#!">Terms of Service</a></p>
+      <p>© 2023 Fronthand - All Rights Reserved - <a href="#!">mentions légales</a></p>
     </div>
 
     <!-- Documentation Modal -->
@@ -526,19 +511,7 @@
             <i class="fas fa-times btn-icon-inner"></i>
           </button>
 
-          <!-- Modal Body -->
-          <div class="modal-body py-5 py-lg-8 px-5 px-lg-8 text-center">
 
-            <div class="icon icon-boxed icon-7x rounded bg-soft-primary text-primary mb-8">
-              <i class="ti-book"></i>
-            </div>
-            <h2 id="documentation" class="mb-3">Documentation</h2>
-            <p class="mb-8">This theme is easy to configure and comes witch a well documented help file, which will assist you in the configuration of your new website in few minutes.</p>
-
-            <!-- Button -->
-            <a class="btn btn-primary d-block d-lg-inline-block" href="!#">Buy theme</a>
-
-          </div>
 
         </div>
       </div>
@@ -556,7 +529,7 @@
 
           <!-- Overlay -->
           <div class="overlay overlay-advanced">
-            <div class="overlay-inner bg-cover" style="background-image: url('assets/images/image-12.jpg');"></div>
+            <div class="overlay-inner bg-cover" style="background-image: url('assets/images/parallax/parallax-4.JPG');"></div>
             <div class="overlay-inner bg-primary opacity-70 hover-opacity-80"></div>
             <div class="overlay-inner bg-gradient-v-transparent-dark opacity-90 hover-opacity-80"></div>
           </div>
@@ -602,39 +575,33 @@
     <script src="assets/vendor/granim.js/dist/granim.min.js"></script>
     <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="assets/vendor/vegas/vegas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
-
-    <script>
-    // Slideshow with Video
-    if ($('body').hasClass('slideshow-video-background')) {
-      $('body.slideshow-video-background').vegas({
-        preload: true,
-        timer: false,
-        delay: 5000,
-        transition: 'fade',
-        transitionDuration: 1000,
-        firstTransition: 'none',
-        slides: [
-          { src: 'assets/images/image-3.jpg' },
-          { src: 'assets/video/moutains.jpg',
-            video: {
-              src: [
-                'assets/video/moutains.mp4',
-                'assets/video/moutains.webm',
-                'assets/video/moutains.ogv'
-              ],
-              loop: false,
-              mute: true
-            }
-          },
-          { src: 'assets/images/image-4.jpg' },
-          { src: 'assets/images/image-2.jpg' }
-        ]
-      });
-    }
-    </script>
 
   </body>
 </html>

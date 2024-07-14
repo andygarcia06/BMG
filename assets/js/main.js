@@ -843,3 +843,4 @@ License: https://themeforest.net/licenses/standard
   });
 
 })(jQuery);
+

@@ -43,6 +43,10 @@ padding-top: 20vh;
     transition: flex 0.5s ease, opacity 0.5s ease;
 }
 
+.section-2-sides h1{
+  font-size: 400%;
+}
+
 .section-2-sides p {
   color: white;
 }
@@ -113,6 +117,13 @@ text-align: center;
 .swiper {
   height: 60vh;
   cursor: grab;
+}
+
+#img-logo-top-solutions{
+  width: 100%;
+  background-color: red;
+  margin: auto;
+  transform: scale(0.1);
 }
 
 /* Accordéon */
@@ -402,6 +413,11 @@ border-radius: 10px;
   width: 60%;
 }
 
+.container-2-sides-about{
+  color: white !important;
+  padding: 0 20px;
+}
+
 .about-card {
   position: relative; 
   background-size: cover;
@@ -485,6 +501,11 @@ border-radius: 10px;
 .about-container-card-text{
   margin-top: 2vh;
   color: #15CDD3;
+  width: 50%;
+}
+
+#btn-to-solution a{
+  color: white !important;
 }
 
 /* Banner content styling */
@@ -987,6 +1008,19 @@ margin: 0; /* Pas d'espace supplémentaire autour des paragraphes */
   font-size: 200% !important;
 }
 
+.container-2-sides{
+  width: 100%;
+  margin: auto;
+}
+
+.section-2-sides {
+  width: 100%;
+}
+
+.btn-section-2-sides{
+  margin-bottom: 20px;
+}
+
 
 
 .container-solutions{
@@ -1011,6 +1045,19 @@ margin: 0; /* Pas d'espace supplémentaire autour des paragraphes */
 
 /* Tablettes en portrait et paysage */
 @media (max-width: 766px) {
+
+  .container-2-sides{
+  width: 100%;
+  margin: auto;
+}
+
+.section-2-sides {
+  width: 100%;
+}
+
+.btn-section-2-sides{
+  margin-bottom: 20px;
+}
 
 .ln-home{
   height: 250vh !important;
@@ -1181,5 +1228,48 @@ height: 200vh !important;
 }
 }
 
+@media only screen and (max-width: 480px) {
+.container-2-sides{
+  width: 100%;
+  margin: auto;
+}
 
+.about-container-card-text{
+  width: 100%;
+}
+
+.section-2-sides {
+  width: 100%;
+  padding: 20px;
+}
+
+.section-2-sides h1 {
+  font-size: 200%;
+}
+
+.btn-section-2-sides{
+  margin-bottom: 20px;
+}
+
+.button-2-sides {
+  position: absolute;
+
+}
+
+.section-2-sides-btns{
+  display: flex;
+  gap: 30px;
+
+}
+
+.section-2-sides-btns a{
+  font-size: 80% !important;
+}
+
+/* Pour les petits smartphones en mode paysage */
+@media only screen and (min-width: 481px) and (max-width: 812px) {
+    /* Vos styles ici */
+}
+
+}
 

@@ -1,32 +1,4 @@
-/*
-Theme Name: Lana
-Description: Creative Coming Soon Template
-Author: Erilisdesign
-Theme URI: https://preview.erilisdesign.com/html/lana/
-Author URI: https://themeforest.net/user/erilisdesign
-Version: 2.1
-License: https://themeforest.net/licenses/standard
-*/
 
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Loader
-2. Fullpage
-3. Set Section Scheme
-4. Scroll progress
-5. Navigation
-6. Back to top
-7. Backgrounds
-8. Animations
-9. Countdown
-10. Magnific Popup
-11. Slider
-12. Subscribe Form
-13. Contact Form
-14. Bootstrap
-15. Helper Classes
--------------------------------------------------------------------*/
 
 (function($) {
     "use strict";

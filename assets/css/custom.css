@@ -489,8 +489,13 @@ border-radius: 10px;
   }
 
   .about-card {
-      width: 80%;
+      width: 100%;
       margin-bottom: 20px;
+  }
+
+  .about-card h5,.about-card p{
+    font-size: 160%;
+    font-weight: bold;
   }
 }
 
@@ -499,9 +504,10 @@ border-radius: 10px;
 }
 
 .about-container-card-text{
-  margin-top: 2vh;
   color: #15CDD3;
-  width: 50%;
+  width: 45%;
+  position: relative;
+  bottom: 60vh;
 }
 
 #btn-to-solution a{
@@ -1236,6 +1242,19 @@ height: 200vh !important;
 
 .about-container-card-text{
   width: 100%;
+  bottom: 0vh;
+
+}
+
+#about-banner-counter-conainer{
+  margin:0 20px !important;
+  width: 90%;
+}
+
+
+.about-card-banner-hr {
+width: 40%;
+margin-left: 0px;
 }
 
 .section-2-sides {
